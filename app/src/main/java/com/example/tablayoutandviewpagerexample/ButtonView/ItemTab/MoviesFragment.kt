@@ -25,7 +25,7 @@ class MoviesFragment : Fragment() {
 
         val fragmentName = arguments?.getString("fragmentName")
 
-        rootView.fragment_name3.text = fragmentName
+        rootView.fragment_name3.text = getString(R.string.movies)
         Log.e(ContentValues.TAG, "onCreateView: $fragmentName")
         return rootView
     }

@@ -1,6 +1,7 @@
 package com.example.tablayoutandviewpagerexample.ButtonView
 
 import android.content.ContentValues.TAG
+import android.content.res.Resources
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -10,6 +11,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.tablayoutandviewpagerexample.ButtonView.ItemTab.BooksFragment
 import com.example.tablayoutandviewpagerexample.ButtonView.ItemTab.MoviesFragment
 import com.example.tablayoutandviewpagerexample.ButtonView.ItemTab.MusicFragment
+import com.example.tablayoutandviewpagerexample.R
 
 class TabsPagerAdapter(fm: FragmentManager, lifecycle: Lifecycle, private var numberOfTabs: Int) : FragmentStateAdapter(fm, lifecycle) {
 
@@ -18,7 +20,7 @@ class TabsPagerAdapter(fm: FragmentManager, lifecycle: Lifecycle, private var nu
             0 -> {
                 // # Music Fragment
                 val bundle = Bundle()
-                bundle.putString("fragmentName", "Music Fragment")
+                bundle.putString("fragmentName", "")
                 val musicFragment = MusicFragment()
                 musicFragment.arguments = bundle
                 Log.e(TAG, "musicFragment: $bundle" )
@@ -27,7 +29,7 @@ class TabsPagerAdapter(fm: FragmentManager, lifecycle: Lifecycle, private var nu
             1 -> {
                 // # Movies Fragment
                 val bundle = Bundle()
-                bundle.putString("fragmentName", "Movies Fragment")
+                bundle.putString("fragmentName", "")
                 val moviesFragment = MoviesFragment()
                 moviesFragment.arguments = bundle
                 Log.e(TAG, "moviesFragment: $bundle" )
@@ -36,7 +38,7 @@ class TabsPagerAdapter(fm: FragmentManager, lifecycle: Lifecycle, private var nu
             2 -> {
                 // # Books Fragment
                 val bundle = Bundle()
-                bundle.putString("fragmentName", "Books Fragment")
+                bundle.putString("fragmentName", "")
                 val booksFragment = BooksFragment()
                 booksFragment.arguments = bundle
                 Log.e(TAG, "booksFragment: $bundle" )

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">اسم التطبيق</string>
+    <string name="book">كتاب</string>
+    <string name="movies">افلام</string>
+    <string name="music">موسيقى</string>
+    <string name="main">الرئسيه</string>
+    <string name="first">الاول</string>
+    <string name="second">الثاني</string>
+    <string name="third">  الثالث</string>
+</resources>

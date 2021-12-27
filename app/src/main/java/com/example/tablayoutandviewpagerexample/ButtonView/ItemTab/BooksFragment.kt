@@ -25,7 +25,7 @@ class BooksFragment : Fragment() {
 
         val fragmentName = arguments?.getString("fragmentName")
 
-        rootView.fragment_name1.text = fragmentName
+        rootView.fragment_name1.text = getString(R.string.book)
         Log.e(ContentValues.TAG, "onCreateView: $fragmentName")
         return rootView
     }

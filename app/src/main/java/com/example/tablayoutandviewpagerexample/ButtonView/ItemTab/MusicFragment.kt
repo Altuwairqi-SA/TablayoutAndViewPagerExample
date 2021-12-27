@@ -25,7 +25,7 @@ class MusicFragment : Fragment() {
 
         val fragmentName = arguments?.getString("fragmentName")
 
-        rootView.fragment_name2.text = fragmentName
+        rootView.fragment_name2.text = getString(R.string.music)
         Log.e(ContentValues.TAG, "onCreateView: $fragmentName")
         return rootView
     }
