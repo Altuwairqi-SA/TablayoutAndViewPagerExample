@@ -5,7 +5,7 @@
      - how to change the bar title according to the current fragment label.
 
 # 📸 Screenshots
- ![ Alt text](demo.gif =250x250)
+ ![ Alt text](demo.gif)
 
 # Resource 
 - [How to create Tabs in Android using Kotlin](https://johncodeos.com/how-to-create-tabs-in-android-using-kotlin/)
